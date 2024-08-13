@@ -3,6 +3,8 @@ import rwClient from '../twitterClient.js';
 
 config();
 
+const SECRET_KEY = process.env.SECRET_KEY;
+
 const tweet = async () => {
     try {
         await rwClient.v2.tweet("test tweet!");
