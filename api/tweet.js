@@ -4,6 +4,7 @@ import rwClient from '../twitterClient.js';
 config();
 
 const SECRET_KEY = process.env.SECRET_KEY;
+const TWEET_MESSAGE = process.env.TWEET_MESSAGE;
 
 const tweet = async () => {
     try {
