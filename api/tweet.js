@@ -8,7 +8,7 @@ const TWEET = process.env.TWEET;
 
 const tweet = async () => {
     try {
-        await rwClient.v2.tweet("test tweet!");
+        await rwClient.v2.tweet(TWEET);
         console.log("Tweeted successfully!");
     } catch (error) {
         console.error(error);
