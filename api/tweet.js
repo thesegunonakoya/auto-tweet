@@ -24,7 +24,7 @@ export default async function (req, res) {
         
         try {
             await tweet();
-            res.status(200).json({ message: 'Tweeted successfully!' });
+            res.status(200).json({ message: 'Tweet has been sent successfully!' });
         } catch (error) {
             console.error(error);
             res.status(500).json({ error: 'Failed to tweet' });
