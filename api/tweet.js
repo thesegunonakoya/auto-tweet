@@ -30,6 +30,6 @@ export default async function (req, res) {
             res.status(500).json({ error: 'Tweet was not sent!' });
         }
     } else {
-        res.status(405).json({ error: 'Method Not Allowed' });
+        res.status(405).json({ error: 'Method Not Allowed!' });
     }
 };
